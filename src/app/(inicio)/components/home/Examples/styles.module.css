@@ -1,0 +1,28 @@
+.examplesWrapper{
+    background: url('../../../../../../public/assets/images/examples.webp');
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    height: 100%;
+    width:100%;
+}
+.examplesMask{
+    background: #00000093;
+    height:100%;
+    padding: 8rem 0;
+    width:100%;
+}
+.examples{
+    display:grid;
+    gap:1rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin:0 auto;
+    overflow-x: hidden;
+    width:50%;
+}
+@media (min-width:240px) and (max-width:900px){
+    .examples{
+        grid-template-columns: 1fr;
+        width:90%;
+    }
+}

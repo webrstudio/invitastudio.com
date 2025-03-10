@@ -1,0 +1,29 @@
+.cardWrapper{
+    align-items: center;
+    background: var(--white-primary);
+    color:var(--black-primary);
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    text-decoration: none;
+    width:100%;
+}
+.cardWrapper:hover{
+    background: var(--golden-primary);
+    color:var(--white-primary);
+    transition:all 300ms ease;
+}
+.cardImage{
+    align-items: center;
+    display: flex;
+    height:350px;
+    width:100%;
+}
+.cardImage img{
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    width:100%;
+}
