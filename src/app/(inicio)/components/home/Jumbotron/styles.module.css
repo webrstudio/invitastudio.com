@@ -5,12 +5,12 @@
   background-size: cover;
   color:var(--white-primary);
   display: flex;
+  height: 100vh;
   justify-content: center;
 }
 .jumbotronElements {
   align-items: center;
   display: flex;
-  margin: 0 auto;
   overflow-x: hidden;
 }
 .jumbotronImage{
@@ -57,7 +57,6 @@
   background: #cf933ad1;
   display:flex;
   height:100%;
-  padding:3rem 0;
   width:100%;
 }
 @media (min-width:240px) and (max-width:900px){

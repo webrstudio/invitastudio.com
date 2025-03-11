@@ -6,8 +6,8 @@ export const Jumbotron = () => {
   return (
     <section className={styles.jumbotronWrapper}>
       <div className={styles.jumbotronMask}>
-        <Slide triggerOnce>
-          <div className={`${styles.jumbotronElements} flexContainer`}>
+        <div className={`${styles.jumbotronElements} flexContainer`}>
+          <Slide triggerOnce>
             <div className={styles.jumbotronImage}>
               <img src="/assets/images/jumbotron.png" />
             </div>
@@ -27,8 +27,8 @@ export const Jumbotron = () => {
                 <span>¡Quiero mi invitación!</span>
               </a>
             </div>
-          </div>
-        </Slide>
+          </Slide>
+        </div>
       </div>
     </section>
   );

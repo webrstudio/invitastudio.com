@@ -1,43 +1,55 @@
 "use client";
 import styles from "./styles.module.css";
+import { FaCheck } from "react-icons/fa6";
 import { Slide } from "react-awesome-reveal";
-import { FaCircleCheck } from "react-icons/fa6";
 import { Container, Title } from "@/components";
 
 export const Benefits = () => {
   return (
     <Container>
       <Title title="¿Por qué elegir una invitación digital?" goldenColor />
-      <Slide triggerOnce>
-        <ul className={`${styles.benefitsList} borderRadius`}>
-          <li className={styles.borderRight}>
-            <FaCircleCheck /> <span>Fácil de compartir</span>
-          </li>
-          <li>
-            <FaCircleCheck /> <span>Mayor interactividad</span>
-          </li>
-          <li className={styles.borderRight}>
-            <FaCircleCheck /> <span>Ahorro de papel</span>
-          </li>
-          <li>
-            <FaCircleCheck /> <span>Ubicación exacta</span>
-          </li>
-          <li className={styles.borderRight}>
-            <FaCircleCheck /> <span>Galería de fotos</span>
-          </li>
-          <li>
-            <FaCircleCheck /> <span>Botones de asistencia</span>
-          </li>
-          <li className={styles.borderRight}>
-            <FaCircleCheck />
-            <span>Videogalería</span>
-          </li>
-          <li>
-            <FaCircleCheck />
-            <span>Reducción de costos</span>
-          </li>
-        </ul>
-      </Slide>
+      <div className={`${styles.benefitsListWrapper} borderRadius`}>
+        <Slide triggerOnce>
+          <ul className={styles.benefitsList}>
+            <li className="borderRadius">
+              <FaCheck /> Personalización completa
+            </li>
+            <li className="borderRadius">
+              <FaCheck />
+              Envío digital instantáneo
+            </li>
+            <li className="borderRadius">
+              <FaCheck />
+              Ubicación exacta de tu evento
+            </li>
+            <li className="borderRadius">
+              <FaCheck />
+              Mayor interactividad
+            </li>
+          </ul>
+        </Slide>
+        <div className={styles.separatorList}></div>
+        <Slide triggerOnce>
+          <ul className={styles.benefitsList}>
+            <li className="borderRadius">
+              <FaCheck />
+              Diseños modernos
+            </li>
+            <li className="borderRadius">
+              <FaCheck />
+              Confirmación de asistencia
+            </li>
+            <li className="borderRadius">
+              <FaCheck />
+              Incluye fotos y videos
+            </li>
+            <li className="borderRadius">
+              <FaCheck />
+              Ahorro de papel
+            </li>
+          </ul>
+        </Slide>
+      </div>
     </Container>
   );
 };
